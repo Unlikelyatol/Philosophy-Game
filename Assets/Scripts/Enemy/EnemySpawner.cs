@@ -11,11 +11,11 @@ public class EnemySpawner : MonoBehaviour
     private float swarmerInterval = 3.5f;
 
     // Start is called before the first frame update
+    /*
     void Start()
     {
         StartCoroutine(spawnEnemy(swarmerInterval, swarmerPrefab));
     }
-
     private IEnumerator spawnEnemy(float interval, GameObject enemy)
     {
         // A Spawner that spawns enemies continuously unless the player dies or pauses the game
@@ -23,4 +23,5 @@ public class EnemySpawner : MonoBehaviour
         GameObject newEnemy = Instantiate(enemy, transform.position, Quaternion.identity);
         if (!PlayerHealth.IsDead && !PauseMenu.IsPaused) { StartCoroutine(spawnEnemy(interval, enemy)); }    
     }
+    */
 }

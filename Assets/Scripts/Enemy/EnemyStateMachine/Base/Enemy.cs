@@ -18,7 +18,8 @@ public class Enemy : MonoBehaviour, IDamageable, IEnemyMovable, ITriggerCheckabl
     public bool Damaged { get; set; }
     public float CurrentHealth { get; set; }
     public Rigidbody2D Rb { get; set; }
-    public bool IsFacingRight { get; set; } = true;
+    // 1 is up -1 is down 2 is right -2 is down (can change later)
+    public int DirectionFacing { get; set; } = -1;
     public bool IsAggressive { get; set; }
     public bool IsAttackable { get; set; }
     public bool IsDead { get; set; }
